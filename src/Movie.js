@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-
+import Movies from './Movies';
 
 const Movie = ({posterUrl, title, description, rate}) => 
 {
@@ -7,10 +7,9 @@ const Movie = ({posterUrl, title, description, rate}) =>
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={posterUrl}/>
             <Card.Body>
-            <Card.Title>title</Card.Title>
+            <Card.Title>titre: {title}</Card.Title>
             <Card.Text>
-                title: {title}
-                <br/>
+                
                 description: {description}
                 <br/>
                 rate: {rate}

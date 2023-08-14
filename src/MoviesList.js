@@ -5,9 +5,9 @@ const MoviesList = () => {
     return(
         <div>
             {
-                Movies.map((Movie)=>(
-                    <Movie key = {Movie.title}
-                    {...Movie}/>
+                Movies.map((movie)=>(
+                    <Movie key = {movie.title}
+                    {...movie}/>
                 ))
             }
         </div>
