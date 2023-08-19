@@ -1,12 +1,12 @@
 import Movies from "./Movies";
-import Movie from "./Movie";
+import MovieCard from "./MovieCard";
 
-const MoviesList = () => {
+const MoviesList = ({movies}) => {
     return(
         <div>
             {
-                Movies.map((movie)=>(
-                    <Movie key = {movie.title}
+                movies.map((movie)=>(
+                    <MovieCard key = {movie.id}
                     {...movie}/>
                 ))
             }

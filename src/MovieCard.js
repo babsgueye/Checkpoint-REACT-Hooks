@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
-import Movies from './Movies';
 
-const Movie = ({posterUrl, title, description, rate}) => 
+
+const MovieCard = ({posterUrl, title, description, rate}) => 
 {
     return (
         <Card style={{ width: '18rem' }}>
@@ -19,6 +19,6 @@ const Movie = ({posterUrl, title, description, rate}) =>
         </Card>
         );
   };
-  export default Movie;
+  export default MovieCard;
   
   
