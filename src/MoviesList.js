@@ -5,7 +5,7 @@ const MoviesList = ({movies}) => {
     return(
         <div>
             {
-                movies.map((movie)=>(
+                Movies.map((movie)=>(
                     <MovieCard key = {movie.id}
                     {...movie}/>
                 ))

@@ -1,6 +1,7 @@
 import MoviesList from './MoviesList';
 import './App.css';
 import Filter from './Filter';
+import Add from './Add';
 import React, {useState} from 'react';
 import Movies from './Movies';
 
@@ -10,6 +11,16 @@ import Movies from './Movies';
   function App () {
     
       const [fileredMovies, setFilteredMovies] = useState(Movies)
+      const [addedMovies, setAddedMovies] = useState("")
+
+const handleAdd = (adds) => {
+//const {id, posterUrl, title, description, rate} = adds;
+  const addedMovies = Movies.push (movie =>{
+    const matchingAdds = movie.adds.push
+    return matchingAdds;
+  } 
+  ); setAddedMovies (addedMovies)
+}
      
       const handleFilter = (filters) => { 
       const {title, rate} = filters;
@@ -33,8 +44,10 @@ import Movies from './Movies';
         <Filter onFilter = {handleFilter}/>
         <MoviesList movies = {fileredMovies} />
 
-        
-        </>);
+        <Add onAdd = {handleAdd}/>
+        <MoviesList movies = {addedMovies} />
+
+         </>);
         };
   
 export default App;
